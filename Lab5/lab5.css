@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #111;
+  color: #fff;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #ffcc00;
+}
+
+.inputArea {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  margin: 0 auto 25px auto;
+  gap: 10px;
+}
+
+.inputArea input,
+.inputArea textarea,
+.inputArea select {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+.inputArea textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+.inputArea button {
+  background: #ffcc00;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.inputArea button:hover {
+  background: #d4a700;
+}
+
+.movieItem {
+  background: #222;
+  padding: 15px;
+  margin: 10px auto;
+  width: 340px;
+  border-radius: 8px;
+  border-left: 4px solid #ffcc00;
+}
+
+.movieItem h3 {
+  margin: 0 0 8px 0;
+  color: #ffcc00;
+}
+
+.movieItem button {
+  background: #ff4444;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.movieItem button:hover {
+  background: #cc0000;
+}
