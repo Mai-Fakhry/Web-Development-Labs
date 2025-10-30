@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <link rel="stylesheet"href="Lab3.css">
+  </head>
+<script>
+      let currentValue = '';
+      let previousValue = '';
+      let operator = null;
+      let result = 0;
+
+      function appendNumber(num) {
+        currentValue += num.toString();
+        updateDisplay(currentValue);
+      }
+      function chooseOp(op) {
+        operator = op;
+        previousValue = currentValue;
+        currentValue = '';
+        updateDisplay(operator);
+      }
+
+      function displayResult() {
+        if (previousValue === '' || currentValue === '' || operator === null) return;
+
+        const prev = parseFloat(previousValue);
+        const current = parseFloat(currentValue);
+
+        switch (operator) {
+          case '+':
+            result = prev + current;
+            break;
+          case '-':
+            result = prev - current;
+            break;
+          case '*':
+            result = prev * current;
+            break;
+          case '/':
+            result = current !== 0 ? prev / current : 'Error';
+            break;
+          default:
+            return;
+        }
+
+        updateDisplay(result);
+        currentValue = result.toString();
+        previousValue = '';
+        operator = null;
+      }
+
+      // Clear everything
+      function clearCalc() {
+        currentValue = '';
+        previousValue = '';
+        operator = null;
+        result = 0;
+        updateDisplay('');
+        console.log("Cleared!");
+      }
+
+      function updateDisplay(value) {
+        document.getElementById('display').value = value;
+      }
+</script>
+  <body>
+    <div>
+    <h1 id="ios Calculator">ios Calculator</h1>
+    <input type="text" id="display"><br><br>
+    <button onclick="appendNumber(0)">0</button>
+    <button onclick="appendNumber(1)">1</button>
+    <button onclick="appendNumber(2)">2</button>
+    <button onclick="appendNumber(3)">3</button>
+    <button onclick="appendNumber(4)">4</button>
+    <button onclick="appendNumber(5)">5</button>
+    <button onclick="appendNumber(6)">6</button>
+    <button onclick="appendNumber(7)">7</button>
+    <button onclick="appendNumber(8)">8</button>
+    <button onclick="appendNumber(9)">9</button>
+    <button onclick="chooseOp('+')">+</button>
+    <button onclick="chooseOp('-')">-</button>
+    <button onclick="chooseOp('*')">*</button>
+    <button onclick="chooseOp('/')">/</button>
+
+    <button onclick="displayResult()">=</button>
+    <button onclick="clearCalc()">clear</button>
+</div>
+  </body>
+</html>

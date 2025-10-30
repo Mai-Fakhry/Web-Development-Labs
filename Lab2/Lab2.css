@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+.Header {
+  background-color: #573e3e;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.Header .description {
+  font-size: 1.5rem;
+  color: #bbb;
+}
+
+.AboutMe {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.AboutMe h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.AboutMe p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+.Projects {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+
+.Projects .project {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.Project1,
+.Project2,
+.Project3 {
+  display: inline-block;
+  width: 280px;
+  background-color: #fff;
+  margin: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  vertical-align: top;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Project1 h2,
+.Project2 h2,
+.Project3 h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.Project1 p,
+.Project2 p,
+.Project3 p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+
+.Project1 h2,
+.Project2 h2,
+.Project3 h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.Project1 p,
+.Project2 p,
+.Project3 p {
+  color: #666;
+  font-size: 0.95rem;
+}
+.contactMe {
+  background-color: #f9f9f9;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.contactMe h1 {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.contactMe input {
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+.SendMessage
+{
+  display: block;
+  width: 80%;
+  max-width: 400px;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #0b0808;
+  font-size: 1rem;
+}
